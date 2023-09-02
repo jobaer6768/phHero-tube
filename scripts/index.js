@@ -25,7 +25,7 @@ const handleCardCategory = async (id) => {
         categoryCardContainer.classList = 'flex flex-col justify-center items-center gap-4 mt-11'
         const div = document.createElement('div');
         div.innerHTML = `
-            <div class="flex justify-center"><img src="./images/icon.png" class="w-86"></div>
+            <div class="flex justify-center"><img src="./images/Icon.png" class="w-86"></div>
             <div class="flex justify-center"><p class="text-4xl font-semibold">Sorry, There is no content present at the moment!</p></div>
         `;
 
