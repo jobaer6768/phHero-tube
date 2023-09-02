@@ -1,7 +1,7 @@
 const handleCategory = async () =>{
     const res = await fetch('https://openapi.programming-hero.com/api/videos/categories')
     const data = await res.json()
-    console.log(data.data)
+    // console.log(data.data)
 
     const categoryBtnContainer = document.getElementById('category-btn-container');
     data.data.forEach(category => {
@@ -14,8 +14,10 @@ const handleCategory = async () =>{
     })
 }
 
-const handleCardCategory = (id) =>{
-    
+const handleCardCategory = async (id) =>{
+    const res = await fetch(`https://openapi.programming-hero.com/api/videos/category/${id}`)
+    const data = await res.json()
+    console.log(data.data)
 }
 
 handleCategory();
